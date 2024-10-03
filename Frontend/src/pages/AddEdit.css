@@ -1,0 +1,69 @@
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Cor de foco (quando o campo está selecionado) */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #917c46;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(145, 124, 70, 0.5);
+    outline: none;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ccac6c;
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Mudança de cor e sombra no hover do botão */
+input[type="submit"]:hover {
+    background-color: #45a049;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para uma aparência mais moderna */
+input[type="submit"]:active {
+    background-color: #ccac6c;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 480px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    input[type="submit"] {
+        width: 100%;
+        max-width: 100%;
+    }
+}
